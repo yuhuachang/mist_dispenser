@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Chart.js -->
+    <script src="js/chartjs/Chart.js"></script>
+  </head>
+  <body class="container">
+
+    <div class="row">
+      Device IP: <span id="ipAddr">not connected</span>
+    </div>
+
+    <canvas id="myChart" width="200" height="100"></canvas>
+
+    <div>
+      Sensor: <span id="sensor">not connected</span>
+    </div>
+
+    <div>
+      R: <span id="r">not connected</span>
+      G: <span id="g">not connected</span>
+      B: <span id="b">not connected</span>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>
+          Theme Lights
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <button id="themeR" class="btn btn-default">R</button>
+        <button id="themeG" class="btn btn-default">G</button>
+        <button id="themeB" class="btn btn-default">B</button>
+        <button id="themeRG" class="btn btn-default">RG</button>
+        <button id="themeRB" class="btn btn-default">RB</button>
+        <button id="themeGB" class="btn btn-default">GB</button>
+      </div>
+      <div class="col-xs-12" style="margin-top: 5px">
+        <button id="themeRGB" class="btn btn-default">RGB</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>
+          Mist Dispenser 0
+          <span id="dispenser0-interval" class="badge">NA</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2" style="width: 100px">
+        <input type="checkbox" data-toggle="switch" id="switch-0" />
+      </div>
+      <div class="col-xs-1" style="width: 20px; padding-top: 1px">
+        <span id="indicator-0" class="fui-radio-checked"></span>
+      </div>
+      <div class="col-xs-9">
+        <div id="interval-slider-0" style="width: 100%; margin-top: 10px;"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>
+          Mist Dispenser 1
+          <span id="dispenser1-interval" class="badge">NA</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2" style="width: 100px">
+        <input type="checkbox" data-toggle="switch" id="switch-1" />
+      </div>
+      <div class="col-xs-1" style="width: 20px; padding-top: 1px">
+        <span id="indicator-1" class="fui-radio-checked"></span>
+      </div>
+      <div class="col-xs-9">
+        <div id="interval-slider-1" style="width: 100%; margin-top: 10px;"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>
+          Mist Dispenser 2
+          <span id="dispenser2-interval" class="badge">NA</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-2" style="width: 100px">
+        <input type="checkbox" data-toggle="switch" id="switch-2" />
+      </div>
+      <div class="col-xs-1" style="width: 20px; padding-top: 1px">
+        <span id="indicator-2" class="fui-radio-checked"></span>
+      </div>
+      <div class="col-xs-9">
+        <div id="interval-slider-2" style="width: 100%; margin-top: 10px;"></div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/flat-ui.min.js"></script>
+    <script src="js/app/application.js"></script>
+
+    <!-- Application Frontend Scripts -->
+    <script src="./settings.js"></script>
+    <script src="./frontend.js"></script>
+  </body>
+</html>
